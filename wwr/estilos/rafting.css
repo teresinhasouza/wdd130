@@ -1,6 +1,5 @@
 :root {
     --cor-primaria: #055a05;
-    --cor-secundaria: #f4a261;
     --cor-destaque1: #264653;
     --cor-destaque2: #e9c46a;
     --fonte-titulo: "Times New Romam", Georgia, serif;
@@ -32,7 +31,7 @@ nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
-.socialmedia a, footer a {
+.redes-sociais a, footer a {
     text-decoration: none;
 }
 .hero {
