@@ -17,7 +17,7 @@ header {
 }
 body {
     font-family: var(--fonte-body);
-    color: var(--cor-destaque1)
+    color: var(--cor-destaque1);
 }
 header, main, footer{
     width: 840px;
