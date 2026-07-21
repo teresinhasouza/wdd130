@@ -3,7 +3,7 @@
     --cor-secundaria: #f4a261;
     --cor-destaque1: #264653;
     --cor-destaque2: #e9c46a;
-    --fonte-titulo: "Times New Romam", "Georgia", serif;
+    --fonte-titulo: "Times New Romam", Georgia, serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
 header {
@@ -55,8 +55,14 @@ nav, p, section, article {
 }
 .hero article {
     position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: rgba(233, 196,106, 0.85);
 }
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 15px;
 }
