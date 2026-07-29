@@ -1,6 +1,6 @@
 :root {
     --cor-primaria: #055a05;
-    --cor-destaque1: #264653;
+    --cor-destaque1: #14242d;
     --cor-destaque2: #e9c46a;
     --fonte-titulo: "Times New Romam", Georgia, serif;
     --fonte-body: Arial, Helvetica, sans-serif;
@@ -8,6 +8,12 @@
 header {
     background-color: var(--cor-primaria);
     color: var(--cor-destaque2);
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+}
+header img{
+    width: 100px;
 }
 *{
     margin: 0;
@@ -27,9 +33,30 @@ h1, h2 {
     color: var(--cor-primaria);
     text-align: center;
 }
+nav {
+    display: flex;
+}
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:visited {
+    color: white;
+}
+nav a:hover {
+    color: var(--cor-destaque2);
 }
 .redes-sociais a, footer a {
     text-decoration: none;
@@ -64,4 +91,60 @@ nav, p, section, article {
     float: right;
     width: 125px;
     margin-left: 15px;
+}
+.aventuras {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+.aventuras h2 {
+    grid-column: 1 / -1;
+}
+.aventuras figure {
+    margin: 0;
+}
+.aventuras img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.aventuras figcaption{
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p {
+    flex: 1;
+    text-align: center;
+}
+.redes-sociais {
+    display: flex;
+    gap: 10px;
+}
+.redes-sociais img {
+    width: 35px;
+    height: auto;
+}
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 220px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+.historia h2 {
+    grid-column: 1 / -1;
+}
+.historia p {
+    margin: 0;
+    padding: 0;
+}
+.historia img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
 }
