@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Companhia de Rafting em Corredeiras</title>
+    <title>Fale Conosco | Companhia de Rafting em Corredeiras</title>
     <meta name="description" content="Conheça a WWR, a melhor opção para aventuras de rafting em corredeiras de tirar o fôlego com total segurança e guias experientes.">
     <meta name="author" content="Teresinha Pereira Matos Souza">
     <link rel="stylesheet" href="estilos/rafting.css">
@@ -48,18 +48,18 @@
                 <div class="opcoes-radio">
                     <label>
                                    
-                        <input type="radio" name="assunto" value="consulta" required>
-                        Consulta Geral
+                        <input type="radio" id="consulta" name="assunto" value="consulta" required>
+                        <label for="consulta">Consulta Geral</label>
                     </label>
 
                     <label>
-                        <input type="radio" name="assunto" value="reserva">
-                        Pergunta sobre Reserva
+                        <input type="radio" id="consulta" name="assunto" value="reserva">
+                        <label for="reserva">Pergunta sobre Reserva</label>
                     </label>
 
                     <label>
-                        <input type="radio" name="assunto" value="sugestao">
-                        Sugestão
+                        <input type="radio" id="sugestao" name="assunto" value="sugestao">
+                        <label for="sugestao">Sugestão de Site</label>
                     </label>
                 </div>    
 
@@ -67,8 +67,8 @@
                 <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
 
                 <label>
-                    <input type="checkbox" name="newsletter">
-                    Quero receber a newsletter mensal
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Quero receber a newsletter mensal</label>
                 </label>
                 <button type="submit">Entrar em Contato</button>
             </form>
@@ -103,7 +103,7 @@
     <footer>
         <p>&copy; 2026 White Water Rafting - Teresinha Pereira Matos Souza</p>
 
-        <nav class="socialmedia">
+        <nav class="redes-sociais">
             <a href="https://facebook.com" target="_blank">
                 <img src="imagens/facebook.jpg" alt="Ícone do Facebook">
             </a>
