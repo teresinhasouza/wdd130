@@ -24,49 +24,69 @@
     <main>
         <h1>Fale Conosco</h1>
         <section class="localizacao"> 
+            <h2>Informações da Empresa</h2>
                      
             <p>São Félix do Tocantins, Tocantins</p>
-            <p>p>Rua principal, 135</p>
+            <p>Rua principal, 135</p>
             <p>+55 98 99999-9999</p>
             <p>info@corredeiras.com</p>
                         
         </section>
 
         <section class="contato">
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31417.042130347887!2d-46.677253667098014!3d-10.170065409804362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9331c5ddd8d2ed83%3A0xe626fc174abd7f0d!2sS%C3%A3o%20F%C3%A9lix%20do%20Tocantins%2C%20State%20of%20Tocantins%2C%2077605-000!5e0!3m2!1sen!2sbr!4v1785830626760!5m2!1sen!2sbr"
-                width="600" height="450" ;" allowfullscreen="" loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"></iframe>"
+            <h2>Entre em Contato</h2>
+            
+            <div class="conteudo-contato">
+            
+                <div class="mapa">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31417.042130347887!2d-46.677253667098014!3d-10.170065409804362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9331c5ddd8d2ed83%3A0xe626fc174abd7f0d!2sS%C3%A3o%20F%C3%A9lix%20do%20Tocantins%2C%20State%20of%20Tocantins%2C%2077605-000!5e0!3m2!1sen!2sbr!4v1785830626760!5m2!1sen!2sbr"
+                      loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            
+                <form>
+            
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+            
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <p>Propósito da mensagem:</p>
+            
+                    <div class="opcoes-radio">
+                        <label><input type="radio" id="consulta" name="assunto" value="consulta" required>
+                            Consulta Geral</label>
+            
+                        <label><input type="radio" id="reserva" name="assunto" value="reserva"> Pergunta sobre
+                            Reserva</label>
+            
+                        <label><input type="radio" id="sugestao" name="assunto" value="sugestao"> Sugestão de
+                            Site</label>
+                    </div>
+            
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+            
+                    <span></span>
+            
+                    <label class="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Quero receber a newsletter mensal
+                    </label>
+            
+                    <span></span>
+            
+                    <button type="submit">Entrar em Contato</button>
+            
+                </form>
+            
             </div>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                <label>Propósito da mensagem:</label>
-                <div class="opcoes-radio">
-                                                
-                    <input type="radio" id="consulta" name="assunto" value="consulta" required>
-                    <label for="consulta">Consulta Geral</label>
-                                
-                    <input type="radio" id="consulta" name="assunto" value="reserva">
-                    <label for="reserva">Pergunta sobre Reserva</label>
-                    
-                    <input type="radio" id="sugestao" name="assunto" value="sugestao">
-                    <label for="sugestao">Sugestão de Site</label>
-                    
-                </div>    
 
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
-
+            
                 
-                    <input type="checkbox" id="newsletter" name="newsletter">
-                    <label for="newsletter">Quero receber a newsletter mensal</label>
-                
-                <button type="submit">Entrar em Contato</button>
-            </form>
 
         </section>
         <section class="funcionarios">
@@ -90,9 +110,7 @@
             </div>
                
         </section>
-        <section class="contato">
-
-        </section>
+                
 
     </main>
     <footer>
